@@ -186,7 +186,7 @@ const Login = ({navigation}) => {
             setEmailErrorMessage('');
           }} // remove error message on click
         />
-        {!!emailErrorMessage ? (
+        {(emailErrorMessage) ? (
           <Text style={styles.errorMessage}>{emailErrorMessage}</Text>
         ) : null}
       </View>
@@ -207,7 +207,7 @@ const Login = ({navigation}) => {
             setPasswordErrorMessage('');
           }} // remove error message on click
         />
-        {!!passwordErrorMessage ? (
+        {(passwordErrorMessage) ? (
           <Text style={styles.errorMessage}>{passwordErrorMessage}</Text>
         ) : null}
       </View>
