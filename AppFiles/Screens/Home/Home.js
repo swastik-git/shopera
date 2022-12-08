@@ -69,7 +69,7 @@ const Home = ({navigation}) => {
       .get()
       .then(response => {
         const products = response.data()?.products;
-        if (!!products) {
+        if (products) {
           setCartData(products);
           console.log('done');
         }

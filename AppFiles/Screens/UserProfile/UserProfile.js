@@ -169,7 +169,7 @@ const UserProfile = ({navigation}) => {
               setNameErrorMessage('');
             }}
           />
-          {!!nameErrorMessage ? (
+          {(nameErrorMessage) ? (
             <Text style={styles.errorMessage}>{nameErrorMessage}</Text>
           ) : null}
         </View>
@@ -203,7 +203,7 @@ const UserProfile = ({navigation}) => {
               setPincodeErrorMessage('');
             }}
           />
-          {!!pincodeErrorMessage ? (
+          {(pincodeErrorMessage) ? (
             <Text style={styles.errorMessage}>{pincodeErrorMessage}</Text>
           ) : null}
         </View>
@@ -226,7 +226,7 @@ const UserProfile = ({navigation}) => {
               setAddressErrorMessage('');
             }}
           />
-          {!!addressErrorMessage ? (
+          {(addressErrorMessage) ? (
             <Text style={styles.errorMessage}>{addressErrorMessage}</Text>
           ) : null}
         </View>

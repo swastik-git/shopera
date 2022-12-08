@@ -232,7 +232,7 @@ const SignUp = ({navigation}) => {
             setNameErrorMessage('');
           }}
         />
-        {!!nameErrorMessage ? (
+        {(nameErrorMessage) ? (
           <Text style={styles.errorMessage}>{nameErrorMessage}</Text>
         ) : null}
       </View>
@@ -254,7 +254,7 @@ const SignUp = ({navigation}) => {
             setEmailErrorMessage('');
           }} // remove error message on click
         />
-        {!!emailErrorMessage ? (
+        {(emailErrorMessage) ? (
           <Text style={styles.errorMessage}>{emailErrorMessage}</Text>
         ) : null}
       </View>
@@ -276,7 +276,7 @@ const SignUp = ({navigation}) => {
             setPasswordErrorMessage('');
           }}
         />
-        {!!passwordErrorMessage ? (
+        {(passwordErrorMessage) ? (
           <Text style={styles.errorMessage}>{passwordErrorMessage}</Text>
         ) : null}
       </View>
@@ -300,7 +300,7 @@ const SignUp = ({navigation}) => {
             setConfirmPasswordErrorMessage('');
           }}
         />
-        {!!confirmPasswordErrorMessage ? (
+        {(confirmPasswordErrorMessage) ? (
           <Text style={styles.errorMessage}>{confirmPasswordErrorMessage}</Text>
         ) : null}
       </View>
